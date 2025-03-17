@@ -1,5 +1,4 @@
 ﻿using System;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace OddEvenNumbersApp
 {
     class Program
@@ -25,10 +24,14 @@ namespace OddEvenNumbersApp
             Console.WriteLine("]");
         }
 
-        static bool IsEven(int Number) => Number % 2 == 0;
-
-        static bool IsOdd(int Number) => !IsEven(Number);
-
+        static bool IsEven(int Number)
+        {
+            return Number % 2 == 0 ? true : false;
+        }
+        static bool IsOdd(int Number)
+        {
+            return !IsEven(Number);
+        }
     }
         
 }
